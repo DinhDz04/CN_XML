@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sinhvien>
+    <sinhvien>
+        <name>Nguyễn Văn A</name>
+        <id>SV001</id>
+        <subjects>
+            <monhoc>
+                <subject_name>Toán</subject_name>
+                <score>8.5</score>
+            </monhoc>
+            <monhoc>
+                <subject_name>Lý</subject_name>
+                <score>7.8</score>
+            </monhoc>
+            <monhoc>
+                <subject_name>Hóa</subject_name>
+                <score>9.0</score>
+            </monhoc>
+        </subjects>
+    </sinhvien>
+    <sinhvien>
+        <name>Trần Thị B</name>
+        <id>SV002</id>
+        <subjects>
+            <monhoc>
+                <subject_name>Văn</subject_name>
+                <score>8.0</score>
+            </monhoc>
+            <monhoc>
+                <subject_name>Sử</subject_name>
+                <score>8.5</score>
+            </monhoc>
+            <monhoc>
+                <subject_name>Địa</subject_name>
+                <score>7.5</score>
+            </monhoc>
+        </subjects>
+    </sinhvien>
+</sinhvien>

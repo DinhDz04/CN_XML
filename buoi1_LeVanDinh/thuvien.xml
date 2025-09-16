@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thuvien>
+    <sach>
+        <title>Đắc Nhân Tâm</title>
+        <author>Dale Carnegie</author>
+        <year>1936</year>
+        <genre>Tự phát triển</genre>
+    </sach>
+    <sach>
+        <title>Nhà Giả Kim</title>
+        <author>Paulo Coelho</author>
+        <year>1988</year>
+        <genre>Tiểu thuyết</genre>
+    </sach>
+    <sach>
+        <title>Clean Code</title>
+        <author>Robert C. Martin</author>
+        <year>2008</year>
+        <genre>Công nghệ</genre>
+    </sach>
+</thuvien>
