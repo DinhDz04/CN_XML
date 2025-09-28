@@ -1,0 +1,8 @@
+<!ELEMENT sinhvien (sinhvien+)>
+<!ELEMENT sinhvien (name, dob ,major)>
+<!ATTLIST sinhvien id ID #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT dob (#PCDATA)>
+<!ELEMENT major (#PCDATA)>
+

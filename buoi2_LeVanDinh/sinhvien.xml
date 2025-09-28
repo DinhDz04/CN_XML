@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sinh_vien SYSTEM "sinhvien.dtd">
+<sinh_vien>
+    <sinhvien id ="SV001">
+        <name>Nguyễn Văn A</name>
+        <dob>2000-01-15</dob>
+        <major>Công nghệ thông tin</major> 
+    </sinhvien>
+    <sinhvien id ="SV002">
+        <name>Trần Thị B</name>
+        <dob>1999-05-22</dob>
+        <major>Kinh tế</major>
+    </sinhvien>
+    <sinhvien id ="SV003">
+        <name>Phạm Văn C</name>
+        <dob>2001-09-10</dob>
+        <major>Quản trị kinh doanh</major>   
+    </sinhvien> 
+</sinh_vien>

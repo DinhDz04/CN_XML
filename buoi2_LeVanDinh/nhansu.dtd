@@ -1,0 +1,13 @@
+<!ELEMENT company (dep:department*)>
+<!ELEMENT dep:department (hr:employee*)>
+<!ELEMENT hr:employee (hr:name, hr:position)>
+<!ELEMENT hr:name (#PCDATA)>
+<!ELEMENT hr:position (#PCDATA)>
+
+<!ATTLIST dep:department
+    name CDATA #REQUIRED
+>
+
+<!ATTLIST hr:employee
+    id ID #REQUIRED
+>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE thuvien SYSTEM "thuvien.dtd">
+<thuvien>
+    <sach id="S001">
+        <tieude>Đắc Nhân Tâm</tieude>
+        <tacgia>Dale Carnegie</tacgia>
+        <namxuatban>1936</namxuatban>
+        <theloai>Tự phát triển</theloai>
+    </sach>
+    <sach id="S002">
+        <tieude>Nhà Giả Kim</tieude>
+        <tacgia>Paulo Coelho</tacgia>
+        <namxuatban>1988</namxuatban>
+        <theloai>Tiểu thuyết</theloai>
+    </sach>
+    <sach id="S003">
+        <tieude>Clean Code</tieude>
+        <tacgia>Robert C. Martin</tacgia>
+        <namxuatban>2008</namxuatban>
+        <theloai>Công nghệ</theloai>
+    </sach>
+ </thuvien>   
