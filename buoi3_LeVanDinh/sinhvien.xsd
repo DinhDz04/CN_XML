@@ -1,0 +1,20 @@
+<?xml version ="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:element name="danhsach_sinhvien">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="sinh_vien" type="sinh_vienType" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+        </xs:element>        
+        <xs:complexType name="sinh_vienType">
+            <xs:sequence>
+                        <xs:sequence>
+                            <xs:element name="name" type="xs:string"/>
+                            <xs:element name="dob" type="xs:date"/>
+                            <xs:element name="major" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:string" use="required"/>
+            </xs:sequence>
+        </xs:complexType>
+</xs:schema>

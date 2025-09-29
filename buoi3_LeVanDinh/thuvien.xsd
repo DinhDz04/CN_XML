@@ -1,0 +1,18 @@
+<?xml version ="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:element name ="thuvien">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="sach" type="sachType" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+        </xs:element>        
+        <xs:complexType name="sachType">
+            <xs:sequence>
+                        <xs:element name="tieude" type="xs:string"/>
+                        <xs:element name="tacgia" type="xs:string"/>
+                        <xs:element name="namxuatban" type="xs:gYear"/>
+                        <xs:element name="theloai" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name="masach" type="xs:ID" use="required"/>
+        </xs:complexType>
