@@ -1,0 +1,30 @@
+<?xml vesiron="1.0" encoding="UTF-8"?>
+<school>
+    <student>
+        <id>SV001</id>
+        <name> Le Van Dinh</name>
+        <date>2004-24-05</date>
+    </student>
+    <student>
+        <id>SV002</id>
+        <name> Nguyen Van A</name>
+        <date>2004-15-06</date>
+    </student>
+    <student>
+        <id>SV003</id>
+        <name> Tran Thi B</name>
+        <date>2004-30-07</date>
+    </student>
+    <enrollment>
+        <studentRef>   SV001</studentRef>
+        <course>Toan101</course>
+    </enrollment> 
+    <enrollment>
+        <studentRef>   SV002</studentRef>
+        <course>VatLy203</course>
+    </enrollment>       
+    <enrollment>
+        <studentRef>   SV003</studentRef>
+        <course>VayLy203</course>
+    </enrollment>
+</school>

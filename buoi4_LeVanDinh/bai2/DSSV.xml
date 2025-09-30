@@ -1,0 +1,48 @@
+<?xml version ="1.0" encoding="UTF-8"?>
+<Dssv>
+    <Sinhvien>
+        <mssv>KTPM053</mssv>
+        <hoten>Le Van Dinh</hoten>
+        <email>lvdinh@gmail.com</email>
+        <diachi>CanTho</diachi>
+        <sodt>0123456789</sodt>
+    </Sinhvien>
+    <Sinhvien>
+        <mssv>KTPM054</mssv>
+        <hoten>Nguyen Van A</hoten>
+        <email>nva@gmail.com</email>
+        <diachi>CanTho</diachi>
+        <sodt>0987654321</sodt>
+    </Sinhvien>
+    <Sinhvien>
+        <mssv>KTPM055</mssv>
+        <hoten>Tran Thi B</hoten>
+        <email>ttb@gmail.com</email>
+        <diachi>CanTho</diachi>
+        <sodt>0123987456</sodt>
+    </Sinhvien>
+    <Lop>
+        <malop>CTK43</malop>
+        <tenlop>KTPM43</tenlop>
+    </Lop>
+    <Lop>
+        <malop>CTK44</malop>
+        <tenlop>KTPM44</tenlop>
+    </Lop>
+    <Lop>
+        <malop>CTK45</malop>
+        <tenlop>KTPM45</tenlop>
+    </Lop>
+    <Khoa>
+        <makhoa>CT</makhoa>
+        <tenkhoa>Cong nghe Thong tin</tenkhoa>
+    </Khoa>
+    <Khoa>
+        <makhoa>DT</makhoa>
+        <tenkhoa>Dien Tu</tenkhoa>
+    </Khoa>
+    <Khoa>
+        <makhoa>VT</makhoa>
+        <tenkhoa>Vien Thong</tenkhoa>
+    </Khoa>
+</Dssv>

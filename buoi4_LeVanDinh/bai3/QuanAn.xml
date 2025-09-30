@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<QUANAN
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="QUANAN.xsd">
+    <Ban>
+        <TenBan>  Ban 1</TenBan>
+        <SoBan> 1</SoBan>
+    </Ban>
+    <Ban>
+        <TenBan>  Ban 2</TenBan>
+        <SoBan> 2</SoBan>
+    </Ban>
+    <Ban>
+        <TenBan>  Ban 3</TenBan>
+        <SoBan> 3</SoBan>
+    </Ban>
+    <Ban>     
+        <TenBan>  Ban 4</TenBan>
+        <SoBan> 4</SoBan>
+    </Ban>
+    <Ban>
+        <TenBan>  Ban 5</TenBan>
+        <SoBan> 5</SoBan>
+    </Ban>
+    <HoaDon>
+        <SOHD>1</SOHD>
+        <NgayLap>2025-09-30</NgayLap>
+        <TongTien>450000</TongTien>
+    </HoaDon>
+    <HoaDon>
+        <SOHD>2</SOHD>
+        <NgayLap>2025-10-01</NgayLap>
+        <TongTien>300000</TongTien>
+    </HoaDon>
+    <HoaDon>
+        <SOHD>3</SOHD>
+        <NgayLap>2025-10-02</NgayLap>
+        <TongTien>150000</TongTien>
+    </HoaDon>
+    <HoaDon>
+        <SOHD>4</SOHD>
+        <NgayLap>2025-10-03</NgayLap>
+        <TongTien>200000</TongTien>
+    </HoaDon>
+    <HoaDon>
+        <SOHD>5</SOHD>
+        <NgayLap>2025-10-04</NgayLap>
+        <TongTien>500000</TongTien>
+    </HoaDon>
+    <Mon>
+        <MaMon> M01</MaMon>
+        <TenMon> Com Suon</TenMon>
+        <Gia> 45000</Gia>
+        <HinhAnh></HinhAnh>
+    </Mon>
+    <Mon>
+        <MaMon> M02</MaMon>
+        <TenMon> Bun Bo Hue</TenMon>
+        <Gia> 50000</Gia>
+        <HinhAnh></HinhAnh>
+    </Mon>
+    <Mon>
+        <MaMon> M03</MaMon>
+        <TenMon> Pho Bo</TenMon>
+        <Gia> 40000</Gia>
+        <HinhAnh></HinhAnh>
+    </Mon>
+    <Mon>
+        <MaMon> M04</MaMon>
+        <TenMon> Hu Tieu</TenMon>
+        <Gia> 35000</Gia>
+        <HinhAnh></HinhAnh>
+    </Mon>
+    <Mon>
+        <MaMon> M05</MaMon>
+        <TenMon> Mi Quang</TenMon>
+        <Gia> 30000</Gia>
+        <HinhAnh></HinhAnh>
+    </Mon>
+    <NhanVien>
+        <MaNV> NV01</MaNV>
+        <TenNV> Le Van Dinh</TenNV>
+        <SoDT> 0123456789</SoDT>
+        <DiaChi> CanTho</DiaChi>
+        <GioiTinh> Nam</GioiTinh>
+        <Username> Dinh</Username>
+        <Password> 123456</Password>
+    </NhanVien>
+    <NhanVien>
+        <MaNV> NV02</MaNV>
+        <TenNV> Nguyen Van A</TenNV>
+        <SoDT> 0987654321</SoDT>
+        <DiaChi> CanTho</DiaChi>
+        <GioiTinh> Nam</GioiTinh>
+        <Username> A</Username>
+        <Password> 123456</Password>
+    </NhanVien>
+    <NhanVien>
+        <MaNV> NV03</MaNV>
+        <TenNV> Tran Thi B</TenNV>
+        <SoDT> 0123987456</SoDT>
+        <DiaChi> CanTho</DiaChi>
+        <GioiTinh> Nu</GioiTinh>
+        <Username> B</Username>
+        <Password> 123456</Password>
+    </NhanVien>
+    <NhanVien>
+        <MaNV> NV04</MaNV>
+        <TenNV> Le Thi C</TenNV>
+        <SoDT> 0987123456</SoDT>
+        <DiaChi> CanTho</DiaChi>
+        <GioiTinh> Nu</GioiTinh>
+        <Username> C</Username>
+        <Password> 123456</Password>
+    </NhanVien>
+    <NhanVien>
+        <MaNV> NV05</MaNV>
+        <TenNV> Pham Van D</TenNV>
+        <SoDT> 0123678901</SoDT>
+        <DiaChi> CanTho</DiaChi>
+        <GioiTinh> Nam</GioiTinh>
+        <Username> D</Username>
+        <Password> 123456</Password>
+    </NhanVien>
+</QUANAN>            

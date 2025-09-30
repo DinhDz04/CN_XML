@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:SimpleType name="phoneType">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="\d{9}"/>
+    </xs:restriction>
+</xs:SimpleType>
+<xs:SimpleType name="tenkhoaType">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="[A-Za-z ]+"/>
+    </xs:restriction>
+</xs:SimpleType>
+<xs:SimpleType name="maType">
+    <xs:restriction base="xs:string">
+        <xs:minLength value="1"/>
+        <xs:maxLength value="10"/>
+    </xs:restriction>
+</xs:SimpleType>
+<xs:SimpleType name="tenType">
+    <xs:restriction base="xs:string">
+        <xs:minLength value="1"/>
+        <xs:maxLength value="50"/>
+    </xs:restriction>
+</xs:SimpleType>
+<xs:element name="Dssv">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="Sinhvien" type="SinhvienType" maxOccurs="unbounded"/>
+            <xs:element name="Lop" type="LopType" maxOccurs="unbounded"/>
+            <xs:element name="Khoa" type="KhoaType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+<xs:complexType name="SinhvienType">
+    <xs:sequence>
+        <xs:element name="mssv" type="xs:string"/>
+        <xs:element name="hoten" type="xs:string"/>
+        <xs:element name="email" type="xs:string"/>
+        <xs:element name="diachi" type="xs:string"/>
+        <xs:element name="sodt" type="xs:string"/>
+    </xs:sequence>
+</xs:complexType>
+<xs:complexType name="LopType">
+    <xs:sequence>
+        <xs:element name="malop" type="xs:string"/>
+        <xs:element name="tenlop" type="xs:string"/>
+    </xs:sequence>
+</xs:complexType>
+<xs:complexType name="KhoaType">
+    <xs:sequence>
+        <xs:element name="makhoa" type="xs:string"/>
+        <xs:element name="tenkhoa" type="xs:string"/>
+    </xs:sequence>
+</xs:complexType>
+<xs:key name="sinhvienKey">
+    <xs:selector xpath="Sinhvien"/>
+    <xs:field xpath="mssv"/>
+</xs:key>
+<xs:keyref name="lopSinhvienRef" refer="sinhvienKey">
+    <xs:selector xpath="Lop"/>
+    <xs:field xpath="malop"/>
+</xs:keyref>
+<xs:key name ="lopKey">
+    <xs:selector xpath="Lop"/>
+    <xs:field xpath="malop"/>
+</xs:key>
+<xs:key name="khoaKey">
+    <xs:selector xpath="Khoa"/>
+    <xs:field xpath="makhoa"/>
+</xs:key>
+<xs:keyref name="khoaLopRef" refer="lopKey">
+    <xs:selector xpath="Khoa"/>
+    <xs:field xpath="makhoa"/>
+</xs:keyref>
+
+</xs:schema>

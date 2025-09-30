@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    <!-- Root element -->
+    <xs:element name="QUANAN">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Ban" type="BanType" maxOccurs="unbounded"/>
+                <xs:element name="HoaDon" type="HoaDonType" maxOccurs="unbounded"/>
+                <xs:element name="Mon" type="MonType" maxOccurs="unbounded"/>
+                <xs:element name="NhanVien" type="NhanVienType" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+        
+        <!-- Key constraints for primary keys -->
+        <xs:key name="BanSoBanKey">
+            <xs:selector xpath="Ban"/>
+            <xs:field xpath="SoBan"/>
+        </xs:key>
+        
+        <xs:key name="HoaDonSOHDKey">
+            <xs:selector xpath="HoaDon"/>
+            <xs:field xpath="SOHD"/>
+        </xs:key>
+        
+        <xs:key name="MonMaMonKey">
+            <xs:selector xpath="Mon"/>
+            <xs:field xpath="MaMon"/>
+        </xs:key>
+        
+        <xs:key name="NhanVienMaNVKey">
+            <xs:selector xpath="NhanVien"/>
+            <xs:field xpath="MaNV"/>
+        </xs:key>
+        
+        <xs:key name="NhanVienUsernameKey">
+            <xs:selector xpath="NhanVien"/>
+            <xs:field xpath="Username"/>
+        </xs:key>
+        
+        <!-- Foreign key constraints would go here if there were references between elements -->
+    </xs:element>
+
+    <!-- Ban Type -->
+    <xs:complexType name="BanType">
+        <xs:sequence>
+            <xs:element name="TenBan" type="xs:string"/>
+            <xs:element name="SoBan" type="xs:positiveInteger"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- HoaDon Type -->
+    <xs:complexType name="HoaDonType">
+        <xs:sequence>
+            <xs:element name="SOHD" type="xs:positiveInteger"/>
+            <xs:element name="NgayLap" type="xs:date"/>
+            <xs:element name="TongTien" type="xs:positiveInteger"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Mon Type -->
+    <xs:complexType name="MonType">
+        <xs:sequence>
+            <xs:element name="MaMon" type="MaMonType"/>
+            <xs:element name="TenMon" type="xs:string"/>
+            <xs:element name="Gia" type="xs:positiveInteger"/>
+            <xs:element name="HinhAnh" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- NhanVien Type -->
+    <xs:complexType name="NhanVienType">
+        <xs:sequence>
+            <xs:element name="MaNV" type="MaNVType"/>
+            <xs:element name="TenNV" type="xs:string"/>
+            <xs:element name="SoDT" type="SoDTType"/>
+            <xs:element name="DiaChi" type="xs:string"/>
+            <xs:element name="GioiTinh">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="Nam"/>
+                        <xs:enumeration value="Nu"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="Username" type="UsernameType"/>
+            <xs:element name="Password" type="PasswordType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Custom simple types for validation -->
+    
+    <!-- MaMon pattern: M followed by 2 digits -->
+    <xs:simpleType name="MaMonType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="M[0-9]{2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- MaNV pattern: NV followed by 2 digits -->
+    <xs:simpleType name="MaNVType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="NV[0-9]{2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- SoDT pattern: 10 digits -->
+    <xs:simpleType name="SoDTType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{10}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Username: 6-50 characters -->
+    <xs:simpleType name="UsernameType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="6"/>
+            <xs:maxLength value="50"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Password: 10-50 characters -->
+    <xs:simpleType name="PasswordType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="10"/>
+            <xs:maxLength value="50"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>
